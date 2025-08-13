@@ -10,6 +10,15 @@ function fetchData(searchTerm) {
             else if (searchTerm === "temple" || searchTerm === "temples") {
                 results = data.temples; // Show all temples
             }
+            else if (searchTerm === "country" || searchTerm === "countries") {
+                results = data.temples;
+                for (let i = 0; i < data.countries.length; i++) {
+                    const country = data.countries[i];
+                    for (let j = 0; j < country.cities.length; j++) {
+                        results.push(country.cities[j]);
+                    }
+                } 
+            }
             else 
             {
                 // Country search
@@ -21,9 +30,6 @@ function fetchData(searchTerm) {
                     // If country matches, return all its cities
                     results = matchingCountry.cities;
                 } else {
-                    // Otherwise search in all categories
-
-                    // Collect all cities
                     let allCities = [];
                     for (let i = 0; i < data.countries.length; i++) {
                         const country = data.countries[i];

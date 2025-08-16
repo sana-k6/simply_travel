@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://www.shutterstock.com/image-photo/beautiful-aerial-cityscape-view-city-600nw-1318933988.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #c4bebe;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077b6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#about h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #023e8a;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Team Section */
+#team {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #023e8a;
+}
+
+/* Team Members as Cards */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.team .name {
+  font-size: 1.3rem;
+  color: #0077b6;
+  margin-bottom: 8px;
+}
+
+.team .role {
+  font-size: 1rem;
+  color: #555;
+}
+nav {
+    background-color: #0077b6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd00;
+}
+
+
+nav form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav button {
+    background-color: #ffdd00;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #ffc300;
+}

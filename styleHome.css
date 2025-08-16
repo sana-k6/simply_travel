@@ -1,0 +1,131 @@
+/* Reset some default margins */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("https://www.shutterstock.com/image-photo/beautiful-aerial-cityscape-view-city-600nw-1318933988.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #c4bebe;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    background-color: #0077b6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd00;
+}
+
+
+nav form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+nav button {
+    background-color: #ffdd00;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #ffc300;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 36px;
+    color: #111416;
+}
+
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #c1bbbb;
+    margin-top:150px;
+    margin-bottom: 40px;
+}
+
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+
+.place {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.place:hover {
+    transform: scale(1.03);
+}
+
+.place img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.place h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #0077b6;
+}
+
+.place p {
+    font-size: 14px;
+    color: #0f0d0d;
+}

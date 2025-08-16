@@ -75,6 +75,7 @@ function displayResults(results) {
     // Display each result
     results.forEach(place => {
         const placeCard = document.createElement("div");
+        placeCard.classList.add("place");
         placeCard.innerHTML = `
             <h3>${place.name}</h3>
             <img src="${place.imageUrl}" alt="${place.name}" width="200">

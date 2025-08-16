@@ -6,12 +6,13 @@ body, h1, h2, p {
 }
 
 body {
-    background-image: url("https://www.shutterstock.com/image-photo/beautiful-aerial-cityscape-view-city-600nw-1318933988.jpg");
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg") ;
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
-    color: #c4bebe;
+    color: #151111;
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -74,35 +75,35 @@ nav button:hover {
 
 h1 {
     text-align: center;
-    margin: 40px 0 10px;
+    margin: 60px 0 10px;
     font-size: 36px;
     color: #111416;
 }
 
 
 p {
-    text-align: center;
+    max-width: 800px; 
+    margin: 150px auto 40px auto; 
     font-size: 18px;
-    color: #c1bbbb;
-    margin-top:150px;
-    margin-bottom: 40px;
+    color: #0e0a28;
+    text-align: left;
 }
 
 
 #results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 10px;
     max-width: 1000px;
-    margin: 0 auto 50px;
-    padding: 0 20px;
+    margin: 0 auto 40px;
+    padding: 0 10px;
 }
 
 
 .place {
     background: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.2s ease;
@@ -122,10 +123,13 @@ p {
 .place h3 {
     margin: 15px 0 10px;
     font-size: 20px;
-    color: #0077b6;
+    color: #0a0f11;
 }
 
 .place p {
-    font-size: 14px;
+    font-size: 20px;
     color: #0f0d0d;
+    max-width: 400px;
+    text-align:center;
+    margin: 10px auto 40px auto;
 }

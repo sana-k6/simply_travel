@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("https://www.shutterstock.com/image-photo/beautiful-aerial-cityscape-view-city-600nw-1318933988.jpg");
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg");
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -76,15 +76,17 @@ nav a:hover {
   color: #023e8a;
 }
 
-/* Team Members as Cards */
-.team-container {
+/* Team List */
+#team ul {
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 0;
 }
 
-.team {
+#team li {
   background-color: white;
   padding: 20px;
   border-radius: 12px;
@@ -93,71 +95,18 @@ nav a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.team:hover {
+#team li:hover {
   transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-.team .name {
+#team .name {
   font-size: 1.3rem;
   color: #0077b6;
   margin-bottom: 8px;
 }
 
-.team .role {
+#team .role {
   font-size: 1rem;
   color: #555;
-}
-nav {
-    background-color: #0077b6;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-}
-
-nav h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffdd00;
-}
-
-
-nav form {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-nav input[type="text"] {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-nav button {
-    background-color: #ffdd00;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-nav button:hover {
-    background-color: #ffc300;
 }

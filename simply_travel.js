@@ -1,4 +1,8 @@
 function fetchData(searchTerm) {
+    if (searchTerm === "") {
+        displayResults([]);
+        return;
+    }
     fetch("./simply_travel.json")
         .then(response => response.json())
         .then(data => {
@@ -75,7 +79,7 @@ function displayResults(results) {
     // Display each result
     results.forEach(place => {
         const placeCard = document.createElement("div");
-        placeCard.classList.add("place");
+        placeCard.classList.add("result");
         placeCard.innerHTML = `
             <h3>${place.name}</h3>
             <img src="${place.imageUrl}" alt="${place.name}" width="200">
@@ -84,4 +88,9 @@ function displayResults(results) {
         `;
         resultsContainer.appendChild(placeCard);
     });
+}
+function clearSearch(){
+    document.getElementById("place").value="";
+    let resultsContainer=document.getElementById("results");
+    resultsContainer.innerHTML = "<p> </p>";
 }
